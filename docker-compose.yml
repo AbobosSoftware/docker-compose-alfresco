@@ -3,7 +3,7 @@ services:
    alfresco:
        image: "pdubois/docker-alfresco:master"
        volumes: 
-        - ${INDEX_AND_DATA}:/opt/alfresco/alf_data       
+        - ${ALFRESCO_DATA}:/opt/alfresco/alf_data       
        ports:
         - "8443:8443"
        environment:
