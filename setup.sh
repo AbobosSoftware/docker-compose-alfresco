@@ -16,6 +16,6 @@ echo "docker-compose installed"
 echo "creating directory $ALFRESCO_DATA"
 sudo mkdir -p $ALFRESCO_DATA
 echo "moving files to $ALFRESCO_HOME"
-cp ./* ${ALFRESCO_HOME}
+cp -f * ${ALFRESCO_HOME}
 echo "finished installing alfresco!"
-echo "To run Alfresco, please run the ${ALFRESCO_HOME}/start.sh script!"
+echo "To run Alfresco, please run the sudo ${ALFRESCO_HOME}/start.sh "
